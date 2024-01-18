@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body> <main id="content">
+    <h1>Sign Up</h1>
+   
+        <section id="conteudo">
+            <p> <label for="First Name"></label>
+           <input type="text" name="first" id="fname" placeholder="First Name" required></p>
+           <p> <label for="Last Name"></label>
+           <input type="text" name="last" id="lname" placeholder="Last Name" required></p>
+           <p><label for="Email"></label>
+            <input type="email" name="em" id="emails" placeholder="Email"></p>
+            <p><label for="Password"></label>
+            <input type="password" name="pssw" id="senha" placeholder="Password" required onclick="mostrarSenha()"></p>
+            <p><label for="Password"></label>
+                <input type="password" name="pssw" id="senha" placeholder="Confirm Password" required onclick="mostrarSenha()"></p>
+            
+        </section>
+        <input type="checkbox" name="check" id="check"> I Agree with <span>privacy</span> and <span>policy</span> <br><br>
+     <p id="loga"><input type="button" value="Sign up" onclick="loginho()"></p>
+     <h2 id="res">
+        
+     </h2> 
+    </main>
+    <footer>Already have an account? <a href="login.html">Sign in</a></footer>
+
+ <script>
+    function loginho(){
+        let logar = document.getElementById("loga")
+        let res = document.getElementById("res");
+            let botao = document.querySelector("input[type='button']");
+
+            if (botao.value.trim() === '') {
+                alert("Digite seus dados para prosseguir!");
+            } else {
+                res.innerHTML = "Você fez o cadastro com sucesso!";
+                res.style.background = "green"
+            }
+        }
+ </script>
+</body>
+</html>
