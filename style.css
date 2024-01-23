@@ -1,0 +1,45 @@
+@charset "utf-8";
+body{
+    text-align: center;
+    color: white;
+    padding: 150px;
+}
+main{
+    border-radius: 20px;
+    text-align: center;
+    background-color: #25273E;
+}
+h1{
+    padding: 15px;
+    text-align: justify;
+    padding-left: 40px;
+}
+section #conteudo p{
+    padding: 15px;
+}
+section#conteudo{
+    padding: 20px;
+}
+#loga input{
+margin: 10px;
+ padding: 5px;
+ width: 60%;
+ background-color: red;
+ border-radius: 15px;
+ border: none;
+ color: white;
+ font-weight: bold;
+}
+#loga input:hover{
+    background-color: white;
+    color: red;
+}
+main input:focus{
+    color: red;
+}
+main input{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 3px;
+}

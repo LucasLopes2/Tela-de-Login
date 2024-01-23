@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main id="content">
+        <h1>Sign in</h1>
+       
+            <section id="conteudo">
+             
+               <p><label for="Email"></label>
+                <input type="email" name="em" id="emails" placeholder=" Email"></p>
+                <p><label for="Password"></label>
+                <input type="password" name="pssw" id="senha" placeholder=" Password" required ></p>
+                <p><label for="Password"></label>
+                    <input type="password" name="pssw" id="senha" placeholder=" Confirm Password" required ></p>
+                
+            </section>
+            <p id="res"></p>
+         <p id="loga"><input type="button" value="Sign in" onclick="logar()"></p>
+        </main>
+
+       
 </body>
 </html>
